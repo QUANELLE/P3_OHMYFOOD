@@ -1,0 +1,47 @@
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px 25px;
+}
+
+header
+{
+	border: solid 2px;/* pour voir effet*/
+	text-align: center;
+}
+section
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+article
+{
+	border: solid 2px;/* pour voir effet*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	height: 400px;
+	margin: 30px;
+}
+#prochainement
+{
+	border: solid 2px;/* pour voir effet*/
+	border-radius: 15%;
+	text-align: center;
+	height: 25px;
+	margin:10px 42vw;
+}
+footer
+{
+	border: solid 2px;/* pour voir effet*/
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+	padding: 0 20px;
+}

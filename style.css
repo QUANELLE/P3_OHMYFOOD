@@ -29,19 +29,38 @@ article
 	height: 400px;
 	margin: 30px;
 }
+article div
+{
+	border: solid red 5px;/* pour voir effet*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.proch
+{
+	text-align: center;
+	padding: 10px;
+}
 #prochainement
 {
-	border: solid 2px;/* pour voir effet*/
+	
 	border-radius: 15%;
 	text-align: center;
-	height: 25px;
-	margin:10px 42vw;
+	
+	padding: 8px;
+	display: inline;
+	background-color: pink;
+	margin: auto;
 }
 footer
 {
+	
+	width: 100%;
 	border: solid 2px;/* pour voir effet*/
 	display: flex;
 	justify-content: space-between;
 	height: 20px;
-	padding: 0 20px;
+	padding: 5px 40px;
 }

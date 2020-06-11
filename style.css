@@ -1,15 +1,23 @@
 body
 {
+	margin: 30px;
+}
+#bloc_page
+{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 10px 25px;
+	margin: 40px;
 }
 
 header
 {
 	border: solid 2px;/* pour voir effet*/
 	text-align: center;
+	width: 80vw;
+	margin: auto;
+	padding: 5px 40px;
 }
 section
 {
@@ -56,11 +64,14 @@ article div
 }
 footer
 {
-	
-	width: 100%;
+	position: fixed;
+	width: 80vw;
 	border: solid 2px;/* pour voir effet*/
 	display: flex;
 	justify-content: space-between;
 	height: 20px;
 	padding: 5px 40px;
+	margin:40px auto;
+	z-index: 1;
+	background-color: blue;
 }

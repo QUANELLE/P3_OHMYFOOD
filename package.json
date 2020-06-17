@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.1",
+  "description": "création d'un site de menus Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QUANELLE/P3_OHMYFOOD.git"
+  },
+  "author": "Laure PICARD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QUANELLE/P3_OHMYFOOD/issues"
+  },
+  "homepage": "https://github.com/QUANELLE/P3_OHMYFOOD#readme"
+}

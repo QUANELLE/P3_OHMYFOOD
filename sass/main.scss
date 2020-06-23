@@ -1,78 +1,15 @@
 
-    body
-    {
-        margin: 30px;
-    }
-    #bloc_page
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 25px;
-        margin: 40px;
-    }
+    @import "./base/base.scss";
+    @import "./utils/variables";
+    @import "./utils/mixins";
+    @import "./layout/article-chic";
+    @import "./layout/article-delice";
+    @import "./layout/article-note";
+    @import "./layout/aticle-palette";
+    @import "./layout/div-proch";
+    @import "./layout/footer";
+    @import "./layout/header";
     
-    header
-    {
-        border: solid 2px;/* pour voir effet*/
-        text-align: center;
-        width: 80vw;
-        margin: auto;
-        padding: 5px 40px;
-    }
-    section
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-around;
-    }
-    article
-    {
-        border: solid 2px;/* pour voir effet*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35%;
-        height: 400px;
-        margin: 30px;
-    }
-    article div
-    {
-        border: solid red 5px;/* pour voir effet*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    .proch
-    {
-        text-align: center;
-        padding: 10px;
-    }
-    #prochainement
-    {
-        
-        border-radius: 15%;
-        text-align: center;
-        
-        padding: 8px;
-        display: inline;
-        background-color: pink;
-        margin: auto;
-    }
-    footer
-    {
-        position: fixed;
-        width: 80vw;
-        border: solid 2px;/* pour voir effet*/
-        display: flex;
-        justify-content: space-between;
-        height: 20px;
-        padding: 5px 40px;
-        margin:40px auto;
-        z-index: 1;
-        background-color: blue;
-    }    
+    
+    
+   

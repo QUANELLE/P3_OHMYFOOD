@@ -18,8 +18,7 @@ body {
 }
 
 header {
-  border: solid 2px;
-  /* pour voir effet*/
+  
   text-align: center;
   width: 80vw;
   margin: auto;

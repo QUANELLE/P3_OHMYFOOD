@@ -1,7 +1,8 @@
 
     @import "./utils/variables";
     @import "./utils/mixins";
-    @import "./base/base.scss";
+    @import "./base/base";
+    @import "./base/fonts";
     @import "./layout/article-chic";
     @import "./layout/article-delice";
     @import "./layout/article-note";

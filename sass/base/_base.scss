@@ -36,10 +36,12 @@ body
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // width: $width;
-        // height: $height;
+        width: $width;
+        height: $height;
         margin: 30px;
         padding: 30px;
+        // @include gradient-text ($key);
+       
     }
     article div
     {
@@ -52,6 +54,7 @@ body
         padding: 50px 20px;
         @include fondu-zoom;
         font-size: 2rem;
+        
 
     }
     .proch

@@ -1,3 +1,13 @@
  .article-chic {
      background-color: $bg-chic;
+     
+    &--titre{
+        background-image: linear-gradient(to right bottom,$color-titre-start-chic,$color-titre-end-chic);
+            color: transparent;
+            background-clip: text; 
+    } 
+    &--menu{
+        color: $color-menu-chic;
+    }  
+     
  }

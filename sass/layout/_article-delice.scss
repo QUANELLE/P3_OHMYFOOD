@@ -1,0 +1,13 @@
+.article-delice {
+    background-color: $bg-delice;
+    
+   &--titre{
+       background-image: linear-gradient(to right bottom,$color-titre-start-delice,$color-titre-end-delice);
+           color: transparent;
+           background-clip: text; 
+   }
+   &--menu{
+    color: $color-menu-delice;
+}    
+    
+}

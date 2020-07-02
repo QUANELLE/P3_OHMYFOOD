@@ -29,8 +29,8 @@ body
     }
     article
     {
+        // border: solid 1px red;
         border: solid 4px rgba(232, 239, 240,0.6);
-        // box-shadow: 8px 8px 8px rgba(232, 239, 240,0.6);
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -43,13 +43,14 @@ body
     }
     article div
     {
-        
+        // border: blue solid 1px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: auto;
+        margin: 0;
         padding: 50px 20px;
+        @include fondu-zoom;
     }
     .proch
     {

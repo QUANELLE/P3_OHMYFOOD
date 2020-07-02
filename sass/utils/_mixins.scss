@@ -1,0 +1,10 @@
+@mixin fondu-zoom {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    &:hover{
+        transform: scale(1.8);
+        opacity: 0.3;
+    }
+    
+}

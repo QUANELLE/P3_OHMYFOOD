@@ -42,8 +42,15 @@ article div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0;
   padding: 50px 20px;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+article div:hover {
+  transform: scale(1.8);
+  opacity: 0.3;
 }
 
 .proch {
@@ -88,22 +95,15 @@ body {
   font-size: 2.4rem;
 }
 
-#chic {
+.article-chic {
   background-color: #f8eff4;
 }
 
-#note {
+.article-note {
   background-color: #fcdfdb;
 }
-#note i {
-  border: blue 1px solid;
+.article-note i {
   background-color: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 }
 
 #prochainement {

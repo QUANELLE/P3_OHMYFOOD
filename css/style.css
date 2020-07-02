@@ -1,10 +1,10 @@
-/* Error: expected ";".
+/* Error: expected ")".
  *    ,
- * 11 | $width: 30vw;
- *    |       ^
+ * 18 |     palette: 
+ *    |            ^
  *    '
- *   sass\utils\_variables.scss 11:7  @import
- *   sass\main.scss 2:13              root stylesheet */
+ *   sass\utils\_maps.scss 18:12  @import
+ *   sass\main.scss 3:13          root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 11 \2502  $width: 30vw;\d\a    \2502        ^\a    \2575 \a   sass\\utils\\_variables.scss 11:7  @import\a   sass\\main.scss 2:13              root stylesheet';
+  content: 'Error: expected ")".\a    \2577 \a 18 \2502      palette: \d\a    \2502             ^\a    \2575 \a   sass\\utils\\_maps.scss 18:12  @import\a   sass\\main.scss 3:13          root stylesheet';
 }

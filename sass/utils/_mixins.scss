@@ -1,9 +1,9 @@
 @mixin fondu-zoom {
     transform: scale(1);
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 1s cubic-bezier(.65,.13,.2,.81);
     &:hover{
-        transform: scale(1.8);
+        transform: scale(1.5);
         opacity: 0.3;
     }
     

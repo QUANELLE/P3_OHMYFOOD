@@ -63,14 +63,23 @@ body
         padding: 15px;
        margin-bottom: 20px;
     }
-    #prochainement
+    .proch--text
     {
-        
         border-radius: 7px;
         text-align: center;        
         padding: 8px 25px;
         display: inline;        
         margin: auto;
+        & span{
+            display: inline;
+            width: 100px;
+            &::after {
+                font-size: 1.1em;
+                animation: ptsusp steps(1,start) 2s  infinite ;
+                content: "";
+            }
+        }
+        
     }
     footer
     {

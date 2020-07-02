@@ -6,6 +6,20 @@
     transform: translateX(30px);
   }
 }
+@keyframes ptsusp {
+  0%, 100% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: ". .";
+  }
+  75% {
+    content: ". . .";
+  }
+}
 body {
   margin: 30px;
 }
@@ -68,12 +82,21 @@ article div:hover {
   margin-bottom: 20px;
 }
 
-#prochainement {
+.proch--text {
   border-radius: 7px;
   text-align: center;
   padding: 8px 25px;
   display: inline;
   margin: auto;
+}
+.proch--text span {
+  display: inline;
+  width: 100px;
+}
+.proch--text span::after {
+  font-size: 1.1em;
+  animation: ptsusp steps(1, start) 2s infinite;
+  content: "";
 }
 
 footer {
@@ -152,7 +175,7 @@ body {
   color: #72bf56;
 }
 
-#prochainement {
+.proch--text {
   background-color: #00806f;
   color: #f8c10a;
 }

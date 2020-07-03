@@ -4,7 +4,7 @@ body
         margin: 30px;
         
     }
-    #bloc_page
+    .bloc_page
     {
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@ body
         margin: auto;
         & span{
             // display: inline;
-            width: 100px;
+            // width: 100px;
             &::after {
                 font-size: 1.1em;
                 animation: ptsusp steps(1,start) 2s  infinite ;

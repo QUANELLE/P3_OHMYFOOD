@@ -24,7 +24,7 @@ body {
   margin: 30px;
 }
 
-#bloc_page {
+.bloc_page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,9 +92,6 @@ a {
   padding: 8px 25px;
   display: inline;
   margin: auto;
-}
-.proch--text span {
-  width: 100px;
 }
 .proch--text span::after {
   font-size: 1.1em;
@@ -191,6 +188,43 @@ footer {
 header {
   background-color: #00806f;
   color: #f8c10a;
+}
+
+.page-note {
+  background-color: #fcdfdb;
+  border: solid 4px rgba(232, 239, 240, 0.6);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+.page-note i {
+  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
+  color: transparent;
+  background-clip: text;
+}
+
+.titre-menu {
+  text-align: center;
+}
+
+.article-note--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-note--text-bas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.article-note--text-bas i {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

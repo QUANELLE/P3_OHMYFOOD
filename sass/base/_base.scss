@@ -54,8 +54,10 @@ body
         padding: 50px 20px;
         @include fondu-zoom;
         font-size: 2rem;
-        
-
+    }
+    a
+    {
+        text-decoration: none;
     }
     .proch
     {
@@ -71,7 +73,7 @@ body
         display: inline;        
         margin: auto;
         & span{
-            display: inline;
+            // display: inline;
             width: 100px;
             &::after {
                 font-size: 1.1em;

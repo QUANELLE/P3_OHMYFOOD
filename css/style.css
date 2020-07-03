@@ -76,6 +76,10 @@ article div:hover {
   opacity: 0.3;
 }
 
+a {
+  text-decoration: none;
+}
+
 .proch {
   text-align: center;
   padding: 15px;
@@ -90,7 +94,6 @@ article div:hover {
   margin: auto;
 }
 .proch--text span {
-  display: inline;
   width: 100px;
 }
 .proch--text span::after {

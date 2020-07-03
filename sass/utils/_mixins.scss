@@ -7,16 +7,29 @@
         opacity: 0.3;
     }
 }
-@mixin gradient-text ($key) 
-{
+// @mixin gradient-text ($key) 
+// {
     
-    @each $key, $value in $col-text {
-        &-#{$key}--titre{
-            background-image: linear-gradient(start,end);
-            color: transparent;
-            background-clip: text; 
-        }
+//     @each $key, $value in $col-text {
+//         &-#{$key}--titre{
+//             background-image: linear-gradient(start,end);
+//             color: transparent;
+//             background-clip: text; 
+//         }
           
-    }
+    // }
       
-}
+    
+// @mixin gradient-text ($key) 
+// {
+    
+//     @each $key, $value in $col-text {
+//         &-#{$key}--titre{
+//             background-image: linear-gradient(start,end);
+//             color: transparent;
+//             background-clip: text; 
+//         }
+          
+//     }
+      
+// }

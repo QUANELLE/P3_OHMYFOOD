@@ -190,7 +190,7 @@ header {
   color: #f8c10a;
 }
 
-.page-note {
+.page-menu_note {
   background-color: #fcdfdb;
   border: solid 4px rgba(232, 239, 240, 0.6);
   border-radius: 8px;
@@ -201,7 +201,7 @@ header {
   margin: 30px;
   padding: 30px;
 }
-.page-note i {
+.page-menu_note i {
   background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
   color: transparent;
   background-clip: text;

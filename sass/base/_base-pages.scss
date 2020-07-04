@@ -1,0 +1,25 @@
+
+
+// bordures pour construction
+.page-menu{
+    border: green 3px solid;
+}
+.menu-note{
+    border: solid 3px red;
+}
+.article-note--text, .article-note--text-bas, .page-note_plat
+{
+    border: solid 3px blue;
+}
+h3 {
+    border: chartreuse 3px solid;
+    text-align: center;
+}
+table {
+    border: solid 2px rgb(133, 41, 5);
+    width: 100%;
+    line-height: 1.5rem;
+}
+.prix {
+    text-align: left;
+}

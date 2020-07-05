@@ -1,5 +1,31 @@
-.proch--text
-{
-    background-color: $bg-logo;
-    color: $text-logo;
-}
+
+.proch
+    {
+        text-align: center;
+        padding: 15px;
+       margin-bottom: 20px;
+    //    div{
+    //        display: inline;
+    //        border: red solid 1px;
+          
+    //    }
+    }
+    
+    .proch--text
+    {
+        background-color: $bg-logo;
+        color: $text-logo;
+        border-radius: 7px;
+        text-align: center;        
+        padding: 8px 25px;
+        display: inline;        
+        margin: auto;
+        & span{
+            &::after {
+                font-size: 1.1em;
+                animation: ptsusp steps(1,start) 2s  infinite ;
+                content: "";
+            }
+        }
+        
+    }

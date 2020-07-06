@@ -1,8 +1,12 @@
 .article-note {
     background-color: $bg-note;
+    
     i {
         background-image: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
         color: transparent;
         background-clip: text;
+    }
+    &--titre a{
+        color: black;
     }
 }

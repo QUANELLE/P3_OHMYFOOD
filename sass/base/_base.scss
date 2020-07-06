@@ -20,9 +20,9 @@ body
         justify-content: space-around;
         align-content: space-around;
     }
-    article
+    .article
     {
-        // border: solid 1px red;
+        
         border: solid 4px rgba(232, 239, 240,0.6);
         border-radius: 8px;
         display: flex;
@@ -38,7 +38,7 @@ body
     }
     article div
     {
-        // border: blue solid 1px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;

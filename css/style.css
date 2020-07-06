@@ -39,7 +39,7 @@ section {
   align-content: space-around;
 }
 
-article {
+.article {
   border: solid 4px rgba(232, 239, 240, 0.6);
   border-radius: 8px;
   display: flex;
@@ -51,22 +51,17 @@ article {
   margin: 30px;
   padding: 30px;
 }
-article-note--titre {
-  background-image: linear-gradient(90deg, black 0%, black 80%);
-  color: transparent;
-  background-clip: text;
-}
-article-chic--titre {
+.article-chic--titre a {
   background-image: linear-gradient(90deg, #d8852e 0%, #905bfd 80%);
   color: transparent;
   background-clip: text;
 }
-article-delice--titre {
+.article-delice--titre a {
   background-image: linear-gradient(90deg, #0431de 0%, #1b91fa 80%);
   color: transparent;
   background-clip: text;
 }
-article-palette--titre {
+.article-palette--titre a {
   background-image: linear-gradient(90deg, #42973c 0%, #bfff7e 80%);
   color: transparent;
   background-clip: text;
@@ -112,6 +107,11 @@ body {
 .article-chic {
   background-color: #f8eff4;
 }
+.article-chic--titre {
+  background-image: linear-gradient(to right bottom, #d8852e, #905bfd);
+  color: transparent;
+  background-clip: text;
+}
 .article-chic--menu {
   color: #c77412;
 }
@@ -130,6 +130,9 @@ body {
   background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
   color: transparent;
   background-clip: text;
+}
+.article-note--titre a {
+  color: black;
 }
 
 .article-palette {

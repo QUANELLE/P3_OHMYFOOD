@@ -7,13 +7,26 @@
         opacity: 0.3;
     }
 }
+// @mixin gradient-text ($col-text) 
+// {
+    
+//     @each $key, $value in $col-text {
+//         &-#{$key}--titre a{
+//             background-image: linear-gradient(90deg, map-get($value, start) 0%, map-get($value, end) 80%);
+//             color:transparent;
+//             background-clip: text; 
+//         }
+          
+//     }
+      
+// }
 @mixin gradient-text ($col-text) 
 {
     
     @each $key, $value in $col-text {
-        &-#{$key}--titre{
-            background-image: linear-gradient(90deg,map-get($value,start) 0%,map-get($value,end) 80%);
-            color: transparent;
+        &-#{$key}--titre a{
+            background-image: linear-gradient(90deg, map-get($value, start) 0%, map-get($value, end) 80%);
+            color:transparent;
             background-clip: text; 
         }
           

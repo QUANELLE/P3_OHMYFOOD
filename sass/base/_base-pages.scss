@@ -1,27 +1,36 @@
+.page-menu{   
+    border: solid 4px rgba(232, 239, 240,0.6);
+     border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
+        margin: 30px;
+        padding: 30px;
+}
 
-
-// bordures pour construction
-// .page-menu{
-//     border: green 3px solid;
-// }
-// .menu-note{
-//     border: solid 3px red;
-// }
-// .article-note--text, .article-note--text-bas, .page-note_plat
-// {
-//     border: solid 3px blue;
-// }
-h3 {
-    // border: chartreuse 3px solid;
+.titre-menu{
     text-align: center;
 }
-table {
-    // border: solid 2px rgb(133, 41, 5);
+h3 {    
+    text-align: center;
+}
+table {   
     width: 100%;
-    line-height: 1.5rem;
+    line-height: 3.5rem;
+    padding: 50px 20px;
+    tr{
+        padding: 30px 10px;
+    }
 }
 .prix {
     text-align: right;    
-    min-width: 50px;
-    // border: solid 1px white;
+    min-width: 50px;    
+}
+.article--text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 50px 30px;
+    @include gradient-text-menu ($col-text);
 }

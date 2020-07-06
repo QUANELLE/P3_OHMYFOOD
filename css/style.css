@@ -52,22 +52,22 @@ article {
   padding: 30px;
 }
 article-note--titre {
-  background-image: linear-gradient(#f15861, #f78f6a);
+  background-image: linear-gradient(90deg, black 0%, black 80%);
   color: transparent;
   background-clip: text;
 }
 article-chic--titre {
-  background-image: linear-gradient(#d8852e, #905bfd);
+  background-image: linear-gradient(90deg, #d8852e 0%, #905bfd 80%);
   color: transparent;
   background-clip: text;
 }
 article-delice--titre {
-  background-image: linear-gradient(#0431de, #1b91fa);
+  background-image: linear-gradient(90deg, #0431de 0%, #1b91fa 80%);
   color: transparent;
   background-clip: text;
 }
 article-palette--titre {
-  background-image: linear-gradient(#42973c, #bfff7e);
+  background-image: linear-gradient(90deg, #42973c 0%, #bfff7e 80%);
   color: transparent;
   background-clip: text;
 }
@@ -111,11 +111,6 @@ body {
 
 .article-chic {
   background-color: #f8eff4;
-}
-.article-chic--titre {
-  background-image: linear-gradient(to right bottom, #d8852e, #905bfd);
-  color: transparent;
-  background-clip: text;
 }
 .article-chic--menu {
   color: #c77412;

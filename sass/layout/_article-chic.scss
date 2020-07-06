@@ -1,13 +1,18 @@
  .article-chic {
      background-color: $bg-chic;
      
-    &--titre{
-        background-image: linear-gradient(to right bottom,$color-titre-start-chic,$color-titre-end-chic);
-            color: transparent;
-            background-clip: text; 
-    } 
+    // &--titre{
+    //     background-image: linear-gradient(to right bottom,$color-titre-start-chic,$color-titre-end-chic);
+    //         color: transparent;
+    //         background-clip: text; 
+    // } 
     &--menu{
         color: $color-menu-chic;
     }  
-     
- }
+}
+//  
+//  article-chic--titre {
+//     background-image: linear-gradient(90deg, #d8852e 0%, #905bfd 80%);
+//     color: transparent;
+//     background-clip: text;
+//   }

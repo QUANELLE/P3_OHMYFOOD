@@ -1,6 +1,7 @@
 .page-menu_note
 {
-    background-color: $bg-note;    
+    background-color: $bg-note;  
+     
         i {
         background-image: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
         color: transparent;
@@ -22,4 +23,7 @@
     i {
         margin-right: 8px;
     }
+}
+.page-note_plat {
+    font-weight: 100;
 }

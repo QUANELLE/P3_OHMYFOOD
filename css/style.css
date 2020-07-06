@@ -96,13 +96,21 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-body {
+header, footer {
   font-family: "perspective_sansregular", Arial, Helvetica, sans-serif;
 }
 
 .article-chic--titre {
   font-family: "Redressed", cursive;
   font-weight: 400;
+}
+
+.article-note, .page-menu_note {
+  font-family: "Merienda One", cursive;
+}
+
+.page-note_plat, .article-note--menu {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .article-chic {
@@ -264,6 +272,10 @@ table tr {
 }
 .article-note--text-bas i {
   margin-right: 8px;
+}
+
+.page-note_plat {
+  font-weight: 100;
 }
 
 .page-menu_chic {

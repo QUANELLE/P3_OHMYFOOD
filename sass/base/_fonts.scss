@@ -10,10 +10,16 @@
     font-style: normal;
 
 }
-body{
+header, footer {
     font-family: 'perspective_sansregular', Arial, Helvetica, sans-serif;
 }
 .article-chic--titre {
     font-family: 'Redressed', cursive;
     font-weight: 400;
+}
+.article-note,.page-menu_note {
+    font-family: 'Merienda One', cursive;
+} 
+.page-note_plat, .article-note--menu {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

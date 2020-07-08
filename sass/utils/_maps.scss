@@ -5,15 +5,19 @@ $col-text:
     (
         start:$color-titre-start-chic,
         end:$color-titre-end-chic,
+        bg:$bg-chic,
     ),
     delice :
     (
         start:$color-titre-start-delice,
         end:$color-titre-end-delice,
+        bg:$bg-delice,
     ),
     palette :
     (
         start:$color-titre-start-palette,
         end:$color-titre-end-palette,
+        bg:$bg-palette,
     )
+
 )

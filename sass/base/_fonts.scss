@@ -10,16 +10,36 @@
     font-style: normal;
 
 }
-header, footer {
+header, footer, .proch {
     font-family: 'perspective_sansregular', Arial, Helvetica, sans-serif;
 }
-.article-chic--titre {
-    font-family: 'Redressed', cursive;
+.article-chic--titre, .article--text-chic {
+    font-family: 'Redressed', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
+}
+.page-chic_plat {
+    font-family: 'Redressed', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
 }
 .article-note,.page-menu_note {
     font-family: 'Merienda One', cursive;
 } 
 .page-note_plat, .article-note--menu {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Kalam', cursive,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article-delice, .page-menu_delice {
+    font-family: 'Marck Script', cursive,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.article-palette, .page-menu_palette {
+    font-family:  'Architects Daughter', cursive,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page-palette_plat {
+    font-family: 'Merienda', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    // font-family: 'Handlee', cursive,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page-menu {
+    font-size: 1.5em;;
+}
+.article--text-delice, .article--text-palette {
+    font-size: 2em;
 }

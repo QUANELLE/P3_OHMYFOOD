@@ -53,52 +53,19 @@ section {
   padding: 30px;
 }
 .article-chic--titre a {
-  color: black;
-  background-color: #f8eff4;
-  position: relative;
-}
-.article-chic--titre a::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
   background-image: linear-gradient(90deg, #d8852e 10%, #905bfd 80%);
-  content: "";
-  mix-blend-mode: lighten;
+  color: transparent;
+  background-clip: text;
 }
 .article-delice--titre a {
-  color: black;
-  background-color: #f9f9f9;
-  position: relative;
-}
-.article-delice--titre a::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
   background-image: linear-gradient(90deg, #0431de 10%, #72b8f5 80%);
-  content: "";
-  mix-blend-mode: lighten;
+  color: transparent;
+  background-clip: text;
 }
 .article-palette--titre a {
-  color: black;
-  background-color: #fdfffd;
-  position: relative;
-}
-.article-palette--titre a::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
   background-image: linear-gradient(90deg, #42973c 10%, #bfff7e 80%);
-  content: "";
-  mix-blend-mode: lighten;
+  color: transparent;
+  background-clip: text;
 }
 
 article div {
@@ -173,28 +140,6 @@ header, footer, .proch {
 .article-chic {
   background-color: #f8eff4;
 }
-.article-chic--titre a {
-  color: black;
-  background-color: #f8eff4;
-  position: relative;
-}
-.article-chic--titre a::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background-image: linear-gradient(to right bottom, #d8852e, #905bfd);
-  content: "";
-  mix-blend-mode: lighten;
-  width: 97%;
-}
-
-.article-chic--menu {
-  color: #c77412;
-  font-weight: bolder;
-}
 
 .article-delice {
   background-color: #f9f9f9;
@@ -237,13 +182,14 @@ header, footer, .proch {
   border-radius: 7px;
   text-align: center;
   padding: 8px 25px;
-  display: inline;
+  display: inline-block;
   margin: auto;
+  min-width: 10vw;
 }
 .proch--text span::after {
   font-size: 1.1em;
   animation: ptsusp steps(1, start) 2s infinite;
-  content: "";
+  content: "...";
 }
 
 footer {
@@ -355,6 +301,15 @@ table tr {
 
 .page-note_plat {
   font-weight: 100;
+}
+
+.page-note_plat h3 {
+  background: linear-gradient(to top, black 0%, grey 10%, transparent 10.01%) no-repeat;
+  background-size: left bottom 0 100%;
+  transition: background-size 0.3s;
+}
+.page-note_plat h3::hover {
+  background-size: 100% 100%;
 }
 
 .page-menu_chic {

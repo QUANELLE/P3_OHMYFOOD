@@ -27,3 +27,14 @@
 .page-note_plat {
     font-weight: 100;
 }
+.page-note_plat h3 {
+    
+    
+    background: linear-gradient(to top, black 0%, grey 10%, transparent 10.01% )no-repeat;
+    background-size:  left bottom 0 100%;
+    transition: background-size .3s;
+        &::hover {
+            background-size: 100% 100%;
+            
+        }
+}

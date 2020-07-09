@@ -22,33 +22,46 @@
 //     }
       
 // }
-
-// test
 @mixin gradient-text ($col-text) 
-{
-
+{    
     @each $key, $value in $col-text
-    {
+     {
         &-#{$key}--titre a
         {
-            color: black;
-            background-color: map-get($value, bg);
-            position: relative;
-                &::before {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                display: block;
-                background-image: linear-gradient(90deg, map-get($value, start) 10%, map-get($value, end) 80%);      
-                content: "";
-                mix-blend-mode: lighten;
-                
-                        }
+            background-image: linear-gradient(90deg, map-get($value, start) 10%, map-get($value, end) 80%);
+            color:transparent;
+            background-clip: text; 
         }
+          
     }
+      
 }
+// test
+// @mixin gradient-text ($col-text) 
+// {
+
+//     @each $key, $value in $col-text
+//     {
+//         &-#{$key}--titre a
+//         {
+//             // color: black;
+//             background-color: map-get($value, bg);
+//             position: relative;
+//                 &::before {
+//                 position: absolute;
+//                 top: 0;
+//                 right: 0;
+//                 bottom: 0;
+//                 left: 0;
+//                 display: block;
+//                 background-image: linear-gradient(90deg, map-get($value, start) 10%, map-get($value, end) 80%);      
+//                 content: "";
+//                 mix-blend-mode: lighten;
+                
+//                         }
+//         }
+//     }
+// }
 
 
 
@@ -57,24 +70,7 @@
 
   
 
-// &--titre a{
-//     color: black;
-//     background-color: $bg-chic;
-//     position: relative;
 
-// &::before {
-//    position: absolute;
-//    top: 0;
-//    right: 0;
-//    bottom: 0;
-//    left: 0;
-//    display: block;
-//  background-image: linear-gradient(to right bottom,$color-titre-start-chic,$color-titre-end-chic);
-//  content: "";
-//  mix-blend-mode: lighten;
-//  width: 97%;
-// } }
-// fin test
 
 @mixin gradient-text-menu ($col-text) 
 {

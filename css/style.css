@@ -304,7 +304,16 @@ table tr {
 }
 
 .h3 {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+}
+.h3::after, .h3::before {
+  content: "---------";
+  flex: 1 1;
+  border-bottom: 2px;
+  margin: auto;
+  color: green;
 }
 
 h3 {

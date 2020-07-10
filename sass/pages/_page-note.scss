@@ -64,8 +64,16 @@
 }
 // }
 .h3 {
-    
+    display: flex;
+    flex-direction: row;
     text-align: center;
+        &::after, &::before {
+            content: "---------";
+            flex: 1 1;
+            border-bottom: 2px;
+            margin: auto;
+            color: green;
+        }
 }
 h3 {
     display: inline;

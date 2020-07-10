@@ -303,13 +303,33 @@ table tr {
   font-weight: 100;
 }
 
-.page-note_plat h3 {
-  background: linear-gradient(to top, black 0%, grey 10%, transparent 10.01%) no-repeat;
-  background-size: left bottom 0 100%;
-  transition: background-size 0.3s;
+.h3 {
+  text-align: center;
 }
-.page-note_plat h3::hover {
-  background-size: 100% 100%;
+
+h3 {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+h3:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  background-color: black;
+  left: 0;
+}
+h3:hover:before {
+  width: 100%;
+  opacity: 1;
 }
 
 .page-menu_chic {

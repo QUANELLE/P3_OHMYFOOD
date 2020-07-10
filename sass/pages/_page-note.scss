@@ -26,15 +26,74 @@
 }
 .page-note_plat {
     font-weight: 100;
-}
-.page-note_plat h3 {
-    
-    
-    background: linear-gradient(to top, black 0%, grey 10%, transparent 10.01% )no-repeat;
-    background-size:  left bottom 0 100%;
-    transition: background-size .3s;
-        &::hover {
-            background-size: 100% 100%;
+
+    // h3 {
+    //     border-bottom: transparent solid 3px;
+    //     transition: all 0.5s ease-in-out;
+        // position: relative;
+        // &::before, &::after {
+        //     content: "__";
+            // display: inline;
+            // position: absolute;
             
-        }
+            // width: 0px;
+            // height: 3px;
+            // margin: 5px 0 0;
+            // transition:all 0.5s ease-in-out;
+            // opacity: 0;
+            // background-color: black;
+            // left: 0;
+        
+        // &:hover {
+            // &::before, &::after {
+            //     width: 100%;
+            //     opacity: 1;
+            // }
+    //         color: red;
+    //         transition: all 0.5s ease-in-out;
+    //         border-color: black;}
+    // }
+    
+    // test hover fonctionne
+    // border-bottom: none;
+    // transition: border-bottom .3s;
+    //     &:hover {
+            
+    //         border-bottom: black solid 1px;
+    //     }
 }
+// }
+.h3 {
+    
+    text-align: center;
+}
+h3 {
+    display: inline;
+    text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+        &:before,
+        // &:after 
+        {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            width: 0px;
+            height: 5px;
+            margin: 5px 0 0;
+            transition: all 0.5s ease-in-out;
+            // transition-duration: 0.75s;
+            opacity: 0;
+            background-color: black;        
+            left: 0;
+        }
+        &:hover {
+            &:before,
+        // &:after 
+        {
+          width: 100%;
+          opacity: 1;          
+        }
+}}

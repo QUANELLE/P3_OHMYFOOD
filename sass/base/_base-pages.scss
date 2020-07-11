@@ -34,3 +34,8 @@ table {
     padding: 50px 30px;
     @include gradient-text-menu ($col-text);
 }
+.page-menu--titre-plat {
+    display:inline-flex;
+    
+    justify-content: center;
+}

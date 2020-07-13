@@ -38,6 +38,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  box-sizing: content-box;
 }
 
 .article {
@@ -53,19 +54,52 @@ section {
   padding: 30px;
 }
 .article-chic--titre a {
+  background-color: #f8eff4;
+  position: relative;
+  z-index: 1;
+}
+.article-chic--titre a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
   background-image: linear-gradient(90deg, #d8852e 10%, #905bfd 80%);
-  color: transparent;
-  background-clip: text;
+  content: "";
+  mix-blend-mode: lighten;
 }
 .article-delice--titre a {
+  background-color: #f9f9f9;
+  position: relative;
+  z-index: 1;
+}
+.article-delice--titre a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
   background-image: linear-gradient(90deg, #0431de 10%, #72b8f5 80%);
-  color: transparent;
-  background-clip: text;
+  content: "";
+  mix-blend-mode: lighten;
 }
 .article-palette--titre a {
+  background-color: #fdfffd;
+  position: relative;
+  z-index: 1;
+}
+.article-palette--titre a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
   background-image: linear-gradient(90deg, #42973c 10%, #bfff7e 80%);
-  color: transparent;
-  background-clip: text;
+  content: "";
+  mix-blend-mode: lighten;
 }
 
 article div {
@@ -152,9 +186,19 @@ header, footer, .proch {
   background-color: #fcdfdb;
 }
 .article-note i {
-  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
-  color: transparent;
-  background-clip: text;
+  background-color: #fcdfdb;
+  position: relative;
+}
+.article-note i::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
+  mix-blend-mode: lighten;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .article-note--titre a {
   color: black;
@@ -219,6 +263,7 @@ header {
 }
 
 .page-menu {
+  box-sizing: content-box;
   border: solid 4px rgba(232, 239, 240, 0.6);
   border-radius: 8px;
   display: flex;
@@ -258,19 +303,52 @@ table tr {
   padding: 50px 30px;
 }
 .article--text-chic {
-  background-image: linear-gradient(90deg, #d8852e 12%, #905bfd 80%);
-  color: transparent;
-  background-clip: text;
+  background-color: #f8eff4;
+  position: relative;
+  z-index: 1;
+}
+.article--text-chic::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: linear-gradient(90deg, #d8852e 10%, #905bfd 80%);
+  content: "";
+  mix-blend-mode: lighten;
 }
 .article--text-delice {
-  background-image: linear-gradient(90deg, #0431de 12%, #72b8f5 80%);
-  color: transparent;
-  background-clip: text;
+  background-color: #f9f9f9;
+  position: relative;
+  z-index: 1;
+}
+.article--text-delice::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: linear-gradient(90deg, #0431de 10%, #72b8f5 80%);
+  content: "";
+  mix-blend-mode: lighten;
 }
 .article--text-palette {
-  background-image: linear-gradient(90deg, #42973c 12%, #bfff7e 80%);
-  color: transparent;
-  background-clip: text;
+  background-color: #fdfffd;
+  position: relative;
+  z-index: 1;
+}
+.article--text-palette::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: linear-gradient(90deg, #42973c 10%, #bfff7e 80%);
+  content: "";
+  mix-blend-mode: lighten;
 }
 
 .page-menu--titre-plat {
@@ -282,9 +360,19 @@ table tr {
   background-color: #fcdfdb;
 }
 .page-menu_note i {
-  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
-  color: transparent;
-  background-clip: text;
+  background-color: #fcdfdb;
+  position: relative;
+}
+.page-menu_note i::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
+  mix-blend-mode: lighten;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .article-note--text {
@@ -354,28 +442,52 @@ table tr {
   color: #905bfd;
 }
 
-.chic_plat_ligne-droite, .chic_plat_ligne-gauche {
+.chic_plat_ligne-droite {
   height: 8px;
   width: 20vw;
   background-color: #ca5bfd;
   margin: 20px;
-  border-radius: 20%;
+  border-radius: 10% 20% 80%/80% 20%;
 }
 
-.chic_dessert_ligne-droite, .chic_dessert_ligne-gauche {
+.chic_plat_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #ca5bfd;
+  margin: 20px;
+  border-radius: 80% 20%/80% 50% 10%;
+}
+
+.chic_dessert_ligne-droite {
   height: 8px;
   width: 20vw;
   background-color: #905bfd;
   margin: 20px;
-  border-radius: 20%;
+  border-radius: 10% 20% 80%/80% 20%;
 }
 
-.chic_entrée_ligne-droite, .chic_entrée_ligne-gauche {
+.chic_dessert_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #905bfd;
+  margin: 20px;
+  border-radius: 80% 20%/80% 50% 10%;
+}
+
+.chic_entrée_ligne-droite {
   height: 8px;
   width: 20vw;
   background-color: #d8852e;
   margin: 20px;
-  border-radius: 20%;
+  border-radius: 10% 20% 80%/80% 20%;
+}
+
+.chic_entrée_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #d8852e;
+  margin: 20px;
+  border-radius: 80% 20%/80% 50% 10%;
 }
 
 .chic_entrée_h3 {
@@ -449,6 +561,109 @@ table tr {
   left: 0;
 }
 .chic_dessert_h3:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.page-menu_delice {
+  background-color: #f9f9f9;
+}
+
+.delice_plat_ligne-droite, .delice_plat_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #6076cc;
+  margin: 20px;
+  border-radius: 0% 80%/0% 80%;
+}
+
+.delice_dessert_ligne-droite, .delice_dessert_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #72b8f5;
+  margin: 20px;
+  border-radius: 0% 80%/0% 80%;
+}
+
+.delice_entrée_ligne-droite, .delice_entrée_ligne-gauche {
+  height: 8px;
+  width: 20vw;
+  background-color: #0431de;
+  margin: 20px;
+  border-radius: 0% 80%/0% 80%;
+}
+
+.delice_entrée_h3 {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+.delice_entrée_h3:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0px;
+  height: 3px;
+  margin: 0 0;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color: #0431de;
+  left: 0;
+}
+.delice_entrée_h3:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.delice_plat_h3 {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+.delice_plat_h3:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0px;
+  height: 3px;
+  margin: 0 0;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color: #6076cc;
+  left: 0;
+}
+.delice_plat_h3:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.delice_dessert_h3 {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+.delice_dessert_h3:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0px;
+  height: 3px;
+  margin: 0 0;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color: #72b8f5;
+  left: 0;
+}
+.delice_dessert_h3:hover:before {
   width: 100%;
   opacity: 1;
 }

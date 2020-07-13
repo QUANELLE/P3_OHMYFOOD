@@ -1,12 +1,22 @@
 .page-menu_note
 {
     background-color: $bg-note;  
-     
-        i {
-        background-image: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
-        color: transparent;
-        background-clip: text;
+    i {        
+        background-color:$bg-note ;
+        position: relative; ;
+       
+        &::after {
+            content: "";
+            position: absolute;
+            background: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
+            mix-blend-mode: lighten;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;     
         }
+    }     
 }
 
 .article-note--text{
@@ -27,31 +37,6 @@
 .page-note_plat {
     font-weight: 100;
 
-    // h3 {
-    //     border-bottom: transparent solid 3px;
-    //     transition: all 0.5s ease-in-out;
-        // position: relative;
-        // &::before,  {
-        //     content: "";
-            // display: inline;
-            // position: absolute;
-            
-            // width: 0px;
-            // height: 3px;
-            // margin: 5px 0 0;
-            // transition:all 0.5s ease-in-out;
-            // opacity: 0;
-            // background-color: black;
-            // left: 0;
-        
-        // &:hover {
-            // &::before {
-            //     width: 100%;
-            //     opacity: 1;
-            // }      
-    //         transition: all 0.5s ease-in-out;
-    //         border-color: black;}
-    // }
     
     
 

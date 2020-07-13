@@ -13,28 +13,50 @@
     color: $color-titre-end-chic;
 }
 
-.chic_plat_ligne-droite, .chic_plat_ligne-gauche {
+.chic_plat_ligne-droite {
     height: 8px;
 	width: 20vw;
 	background-color:$color-titre-middle-chic;
     margin: 20px;
-    border-radius: 20%;
+    border-radius: 10% 20% 80%/ 80% 20%;
     }
-.chic_dessert_ligne-droite, .chic_dessert_ligne-gauche {
+    .chic_plat_ligne-gauche {
+      height: 8px;
+    width: 20vw;
+    background-color:$color-titre-middle-chic;
+      margin: 20px;
+      border-radius: 80% 20% / 80% 50% 10%;
+      }
+.chic_dessert_ligne-droite {
       height: 8px;
       width: 20vw;
     background-color:$color-titre-end-chic;
       margin: 20px;
-      border-radius: 20%;
+      border-radius: 10% 20% 80%/ 80% 20%;
+     }
+ .chic_dessert_ligne-gauche {
+      height: 8px;
+      width: 20vw;
+    background-color:$color-titre-end-chic;
+      margin: 20px;
+      border-radius:  80% 20% / 80% 50% 10%;
      }
 
-.chic_entrée_ligne-droite, .chic_entrée_ligne-gauche {
+.chic_entrée_ligne-droite {
         height: 8px;
         width: 20vw;
         background-color:$color-titre-start-chic;
         margin: 20px;
-        border-radius: 20%;
+        border-radius: 10% 20% 80%/ 80% 20%;
         }
+
+.chic_entrée_ligne-gauche {
+          height: 8px;
+          width: 20vw;
+          background-color:$color-titre-start-chic;
+          margin: 20px;
+          border-radius: 80% 20% / 80% 50% 10%;
+          }
 
 // soulignement animé
  

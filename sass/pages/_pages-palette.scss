@@ -46,10 +46,19 @@
 }}
 
 
-.palette_ligne-droite, .palette_ligne-gauche {
+.palette_ligne-droite {
     height: 8px;
 	// width: 25vw;
-	background-color: black;
+	background:linear-gradient(to left, $color-titre-start-palette, $color-titre-end-palette);
     margin: 20px;
     flex-grow: 1;
+    border-radius: 50% 20% 20% 50%;
     }
+ .palette_ligne-gauche {
+        height: 8px;
+        // width: 25vw;
+        background:linear-gradient(to right, $color-titre-start-palette, $color-titre-end-palette);
+        margin: 20px;
+        flex-grow: 1;
+        border-radius: 20% 50% 50% 20%;
+        }    

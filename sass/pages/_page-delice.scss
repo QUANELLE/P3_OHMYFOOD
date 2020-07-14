@@ -4,31 +4,48 @@
 }
 
 
-.delice_plat_ligne-droite, .delice_plat_ligne-gauche {
+.delice_plat_ligne-droite {
     height: 8px;
-  // width: 20vw;
-  flex-grow: 1;
+   flex-grow: 1;
 	background-color:$color-titre-middle-delice;
     margin: 20px;
-    border-radius: 0% 80%/ 0% 80%;
+    border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
     }
-.delice_dessert_ligne-droite, .delice_dessert_ligne-gauche {
+.delice_plat_ligne-gauche {
       height: 8px;
-      // width: 20vw;
+     flex-grow: 1;
+    background-color:$color-titre-middle-delice;
+      margin: 20px;
+      border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+      }
+.delice_dessert_ligne-droite {
+      height: 8px;     
       flex-grow: 1;
     background-color:$color-titre-end-delice;
       margin: 20px;
-      border-radius: 0% 80%/ 0% 80%;
+      border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
      }
-
-.delice_entrée_ligne-droite, .delice_entrée_ligne-gauche {
-        height: 8px;
-        // width: 20vw;
+.delice_dessert_ligne-gauche {
+      height: 8px;     
+      flex-grow: 1;
+    background-color:$color-titre-end-delice;
+      margin: 20px;
+      border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+     }
+.delice_entrée_ligne-gauche {
+        height: 8px;        
         flex-grow: 1;
         background-color:$color-titre-start-delice;
         margin: 20px;
-        border-radius: 0% 80%/ 0% 80%;
+        border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
         }
+.delice_entrée_ligne-droite {
+          height: 8px;        
+          flex-grow: 1;
+          background-color:$color-titre-start-delice;
+          margin: 20px;
+          border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
+          }
 
 // soulignement animé
  

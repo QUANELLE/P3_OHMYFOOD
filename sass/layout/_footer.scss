@@ -1,6 +1,6 @@
 footer{
     background-color: $bg-logo;
-    color: $text-logo;
+    // color: $text-logo;
         position: fixed;        
         bottom: 0;
         width: 80vw;
@@ -14,6 +14,9 @@ footer{
 
         &:hover{
             animation: wiggle 150ms ease-in-out 8 alternate both;
+        }
+        a {
+            color: $text-logo;
         }
         
     }

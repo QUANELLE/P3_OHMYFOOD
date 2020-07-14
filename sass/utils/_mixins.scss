@@ -7,15 +7,9 @@
         opacity: 0.3;
     }
 }
-@mixin underline {
-    
-}
 
-
-// test
 @mixin gradient-text ($col-text) 
 {
-
     @each $key, $value in $col-text
     {
         &-#{$key}--titre a
@@ -55,14 +49,12 @@
 }
 
 @mixin gradient-text-menu ($col-text) 
-{
-    
+{    
     @each $key, $value in $col-text {
         &-#{$key} {
             background-color: map-get($value, bg);
             position: relative;
-            // z-index: 1;
-           
+            // z-index: 1;         
                 
                 &::before {
                 position: absolute;

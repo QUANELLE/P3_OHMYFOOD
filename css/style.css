@@ -130,7 +130,7 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-header, footer, .proch {
+header, footer, .proch, .titre-menu {
   font-family: "perspective_sansregular", Arial, Helvetica, sans-serif;
 }
 
@@ -223,6 +223,7 @@ header, footer, .proch {
 .proch--text {
   background-color: #00806f;
   color: #f8c10a;
+  font-size: 1.5rem;
   border-radius: 7px;
   text-align: center;
   padding: 8px 25px;
@@ -238,7 +239,6 @@ header, footer, .proch {
 
 footer {
   background-color: #00806f;
-  color: #f8c10a;
   position: fixed;
   bottom: 0;
   width: 80vw;
@@ -251,6 +251,9 @@ footer {
 
 footer div:hover {
   animation: wiggle 150ms ease-in-out 8 alternate both;
+}
+footer div a {
+  color: #f8c10a;
 }
 
 header {
@@ -419,9 +422,10 @@ table tr {
 }
 .page-note_plat .note_ligne-droite, .page-note_plat .note_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: black;
   margin: 20px;
+  border-radius: 30%;
 }
 
 .page-menu_chic {
@@ -567,28 +571,52 @@ table tr {
   background-color: #f9f9f9;
 }
 
-.delice_plat_ligne-droite, .delice_plat_ligne-gauche {
+.delice_plat_ligne-droite {
   height: 8px;
   flex-grow: 1;
   background-color: #6076cc;
   margin: 20px;
-  border-radius: 0% 80%/0% 80%;
+  border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
 }
 
-.delice_dessert_ligne-droite, .delice_dessert_ligne-gauche {
+.delice_plat_ligne-gauche {
+  height: 8px;
+  flex-grow: 1;
+  background-color: #6076cc;
+  margin: 20px;
+  border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
+.delice_dessert_ligne-droite {
   height: 8px;
   flex-grow: 1;
   background-color: #72b8f5;
   margin: 20px;
-  border-radius: 0% 80%/0% 80%;
+  border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
 }
 
-.delice_entrée_ligne-droite, .delice_entrée_ligne-gauche {
+.delice_dessert_ligne-gauche {
+  height: 8px;
+  flex-grow: 1;
+  background-color: #72b8f5;
+  margin: 20px;
+  border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
+.delice_entrée_ligne-gauche {
   height: 8px;
   flex-grow: 1;
   background-color: #0431de;
   margin: 20px;
-  border-radius: 0% 80%/0% 80%;
+  border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
+.delice_entrée_ligne-droite {
+  height: 8px;
+  flex-grow: 1;
+  background-color: #0431de;
+  margin: 20px;
+  border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
 }
 
 .delice_entrée_h3 {

@@ -298,14 +298,13 @@ table tr {
 
 .article--text {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bolder;
   padding: 50px 30px;
 }
 .article--text-chic {
   background-color: #f8eff4;
   position: relative;
-  z-index: 1;
 }
 .article--text-chic::before {
   position: absolute;
@@ -321,7 +320,6 @@ table tr {
 .article--text-delice {
   background-color: #f9f9f9;
   position: relative;
-  z-index: 1;
 }
 .article--text-delice::before {
   position: absolute;
@@ -337,7 +335,6 @@ table tr {
 .article--text-palette {
   background-color: #fdfffd;
   position: relative;
-  z-index: 1;
 }
 .article--text-palette::before {
   position: absolute;
@@ -353,6 +350,7 @@ table tr {
 
 .page-menu--titre-plat {
   display: inline-flex;
+  width: 100%;
   justify-content: center;
 }
 
@@ -444,7 +442,7 @@ table tr {
 
 .chic_plat_ligne-droite {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #ca5bfd;
   margin: 20px;
   border-radius: 10% 20% 80%/80% 20%;
@@ -452,7 +450,7 @@ table tr {
 
 .chic_plat_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #ca5bfd;
   margin: 20px;
   border-radius: 80% 20%/80% 50% 10%;
@@ -460,7 +458,7 @@ table tr {
 
 .chic_dessert_ligne-droite {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #905bfd;
   margin: 20px;
   border-radius: 10% 20% 80%/80% 20%;
@@ -468,7 +466,7 @@ table tr {
 
 .chic_dessert_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #905bfd;
   margin: 20px;
   border-radius: 80% 20%/80% 50% 10%;
@@ -476,7 +474,7 @@ table tr {
 
 .chic_entrée_ligne-droite {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #d8852e;
   margin: 20px;
   border-radius: 10% 20% 80%/80% 20%;
@@ -484,7 +482,7 @@ table tr {
 
 .chic_entrée_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #d8852e;
   margin: 20px;
   border-radius: 80% 20%/80% 50% 10%;
@@ -571,7 +569,7 @@ table tr {
 
 .delice_plat_ligne-droite, .delice_plat_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #6076cc;
   margin: 20px;
   border-radius: 0% 80%/0% 80%;
@@ -579,7 +577,7 @@ table tr {
 
 .delice_dessert_ligne-droite, .delice_dessert_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #72b8f5;
   margin: 20px;
   border-radius: 0% 80%/0% 80%;
@@ -587,7 +585,7 @@ table tr {
 
 .delice_entrée_ligne-droite, .delice_entrée_ligne-gauche {
   height: 8px;
-  width: 20vw;
+  flex-grow: 1;
   background-color: #0431de;
   margin: 20px;
   border-radius: 0% 80%/0% 80%;
@@ -666,6 +664,53 @@ table tr {
 .delice_dessert_h3:hover:before {
   width: 100%;
   opacity: 1;
+}
+
+.page-menu_palette {
+  background-color: #fdfffd;
+}
+
+.article-palette--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-palette_plat {
+  font-weight: 100;
+}
+
+.palette_h3 {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+.palette_h3:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 0px;
+  height: 3px;
+  margin: 0 0;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color: #72bf56;
+  left: 0;
+}
+.palette_h3:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.palette_ligne-droite, .palette_ligne-gauche {
+  height: 8px;
+  background-color: black;
+  margin: 20px;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

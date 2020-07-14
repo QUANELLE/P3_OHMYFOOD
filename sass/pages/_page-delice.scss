@@ -6,14 +6,16 @@
 
 .delice_plat_ligne-droite, .delice_plat_ligne-gauche {
     height: 8px;
-	width: 20vw;
+  // width: 20vw;
+  flex-grow: 1;
 	background-color:$color-titre-middle-delice;
     margin: 20px;
     border-radius: 0% 80%/ 0% 80%;
     }
 .delice_dessert_ligne-droite, .delice_dessert_ligne-gauche {
       height: 8px;
-      width: 20vw;
+      // width: 20vw;
+      flex-grow: 1;
     background-color:$color-titre-end-delice;
       margin: 20px;
       border-radius: 0% 80%/ 0% 80%;
@@ -21,7 +23,8 @@
 
 .delice_entrée_ligne-droite, .delice_entrée_ligne-gauche {
         height: 8px;
-        width: 20vw;
+        // width: 20vw;
+        flex-grow: 1;
         background-color:$color-titre-start-delice;
         margin: 20px;
         border-radius: 0% 80%/ 0% 80%;

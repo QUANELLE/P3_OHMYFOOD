@@ -61,7 +61,7 @@
         &-#{$key} {
             background-color: map-get($value, bg);
             position: relative;
-            z-index: 1;
+            // z-index: 1;
                 
                 &::before {
                 position: absolute;

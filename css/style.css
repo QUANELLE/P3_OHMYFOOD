@@ -23,6 +23,9 @@
 }
 body {
   margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bloc_page {
@@ -56,7 +59,6 @@ section {
 .article-chic--titre a {
   background-color: #f8eff4;
   position: relative;
-  z-index: 1;
 }
 .article-chic--titre a::before {
   position: absolute;
@@ -72,7 +74,6 @@ section {
 .article-delice--titre a {
   background-color: #f9f9f9;
   position: relative;
-  z-index: 1;
 }
 .article-delice--titre a::before {
   position: absolute;
@@ -88,7 +89,6 @@ section {
 .article-palette--titre a {
   background-color: #fdfffd;
   position: relative;
-  z-index: 1;
 }
 .article-palette--titre a::before {
   position: absolute;
@@ -101,8 +101,16 @@ section {
   content: "";
   mix-blend-mode: lighten;
 }
+@media screen and (max-width: 879px) {
+  .article {
+    width: 60vw;
+    height: 90vw;
+  }
+}
 
 article div {
+  width: 70%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,9 +122,19 @@ article div {
   transition: all 1s cubic-bezier(0.65, 0.13, 0.2, 0.81);
   font-size: 2rem;
 }
+@media screen and (max-width: 1000px) and (min-width: width 879px) {
+  article div {
+    transform: scale(0.8);
+  }
+}
 article div:hover {
   transform: scale(1.5);
   opacity: 0.3;
+}
+@media screen and (max-width: 1000px) and (min-width: width 879px) {
+  article div:hover {
+    transform: scale(1.2);
+  }
 }
 
 a {
@@ -167,10 +185,23 @@ header, footer, .proch, .titre-menu {
   font-size: 1.5em;
 }
 
+footer {
+  font-size: 1.2rem;
+}
+
 .article--text-delice, .article--text-palette {
   font-size: 2em;
 }
 
+@media screen and (max-width: 1000px) {
+  .bloc_page {
+    font-size: smaller;
+  }
+
+  .article--text-delice, .article--text-palette {
+    font-size: 1.2em;
+  }
+}
 .article-chic {
   background-color: #f8eff4;
 }

@@ -38,8 +38,19 @@ header, footer, .proch, .titre-menu {
     // font-family: 'Handlee', cursive,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .page-menu {
-    font-size: 1.5em;;
+    font-size: 1.5em;
+}
+footer {
+    font-size: 1.2rem;
 }
 .article--text-delice, .article--text-palette {
-    font-size: 2em;
+    font-size: 2em;    
+}
+@media screen and (max-width: 1000px) {
+.bloc_page {
+    font-size: smaller;
+}
+.article--text-delice, .article--text-palette {
+    font-size: 1.2em;    
+}
 }

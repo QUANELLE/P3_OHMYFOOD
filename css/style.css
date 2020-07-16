@@ -57,8 +57,10 @@ section {
   padding: 30px;
 }
 .article-chic--titre a {
+  display: block;
   background-color: #f8eff4;
   position: relative;
+  z-index: 1;
 }
 .article-chic--titre a::before {
   position: absolute;
@@ -72,8 +74,10 @@ section {
   mix-blend-mode: lighten;
 }
 .article-delice--titre a {
+  display: block;
   background-color: #f9f9f9;
   position: relative;
+  z-index: 1;
 }
 .article-delice--titre a::before {
   position: absolute;
@@ -87,8 +91,10 @@ section {
   mix-blend-mode: lighten;
 }
 .article-palette--titre a {
+  display: block;
   background-color: #fdfffd;
   position: relative;
+  z-index: 1;
 }
 .article-palette--titre a::before {
   position: absolute;
@@ -111,7 +117,7 @@ section {
 article div {
   width: 70%;
   text-align: center;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -27,7 +27,7 @@ body
     }
     .article
     {
-        
+        // isolation: isolate;
         border: solid 4px rgba(232, 239, 240,0.6);
         border-radius: 8px;
         display: flex;
@@ -52,7 +52,8 @@ body
         // flex-wrap: wrap;
         width: 70%;
         text-align: center;
-        display: flex;
+        display:block;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;

@@ -1,10 +1,8 @@
 .article-palette{
     background-color: $bg-palette;
-    // &--titre{
-    //     background-image: linear-gradient(to right bottom,$color-titre-start-palette,$color-titre-end-palette);
-    //         color: transparent;
-    //         background-clip: text; 
-    // }
+    &--titre {
+        padding: inherit;
+    }
     &--menu{
         color: $color-menu-palette;
     } 

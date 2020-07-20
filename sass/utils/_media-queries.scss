@@ -1,0 +1,22 @@
+@media screen and (max-width: 879px) {
+    body {
+        margin-top: 0px;
+        
+    }
+    .bloc_page {
+        margin-top: 0px;
+        font-size: 0.6rem;
+    }
+    footer div {
+        font-size: 0.8rem;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .bloc_page, footer {
+        font-size: 0.8rem;
+    }
+    .article--text-delice, .article--text-palette {
+        font-size: 1.2rem;    
+    }
+    }

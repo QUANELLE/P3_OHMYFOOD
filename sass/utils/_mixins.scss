@@ -1,26 +1,23 @@
 @mixin fondu-zoom {
-    transform: scale(1);
-    @media screen and (max-width:1000px) and (min-width:879px) {
-        transform: scale(0.8);
-    }
-    @media screen and (max-width:460px) {
-        transform: scale(0.8);
-    }
+    transform: scale(1); 
+   
     opacity: 1;
     transition: all 1s cubic-bezier(.65,.13,.2,.81);
     &:hover{
-        transform: scale(1.5);
-        @media screen and (max-width:1000px) and (min-width:879px) {
-            transform: scale(1.2);
-        }
-        @media screen and (max-width:460px) {
-            transform: scale(1.2);
-        }
+        transform: scale(1.5);              
         opacity: 0.3;
     }
 }
 
-
+@mixin fondu-zoom-small {    
+     transform: scale(0.6);
+    opacity: 1;
+    transition: all 1s cubic-bezier(.65,.13,.2,.81);
+    &:hover{        
+            transform: scale(1);       
+            opacity: 0.3;
+            }
+}
 @mixin gradient-text ($col-text) 
 {
     @each $key, $value in $col-text

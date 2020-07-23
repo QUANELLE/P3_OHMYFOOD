@@ -29,8 +29,7 @@ table {
     min-width: 50px;    
 }
 .article--text {
-    text-align: center;
-    font-size: 2.8rem;
+    text-align: center;    
     font-weight: bolder;
     padding: 50px 30px;
     @include gradient-text-menu ($col-text);

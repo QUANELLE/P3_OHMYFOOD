@@ -1,40 +1,46 @@
+@media screen and (max-width: 1000px) {
+    
+    .article--text-delice, .article--text-palette {
+        font-size: 2.8rem;    
+    }    
+}
 @media screen and (max-width: 879px) {
-    body{
-        margin-top: 0px !important;        
-    }
-    .bloc_page {
-        margin-top: 0px !important;
-        // font-size: 0.6rem;
-        padding-top: 0px;
-    }
+    
     .article {
         width: $media-width;
         height: $media-height;
     }
-    footer div {
+    footer div, .proch--text {
         font-size: 1rem;
-    }
-    .proch--text {
-        font-size: 1rem ;
-    }
+    }   
   }
 
-@media screen and (max-width: 1000px) {
-    .bloc_page {
-        font-size: 0.8rem !important;
-    }
-    .article--text-delice, .article--text-palette {
-        font-size: 2.8rem;    
-    }
-    }
-
-@media screen and (min-width:879px) and (max-width:1000px), (max-width:460px) {
+@media screen and (min-width:879px) and (max-width:1000px), (max-width:470px) {
     article div {
         @include fondu-zoom-small;
-        // font-size: 1.1rem !important;
+        
     }
     .page-menu {
         font-size: 1.1rem;
     }
-}  
-
+} 
+@media screen and (max-width:470px) {
+    article div {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width:300px) {
+    article div {
+        @include fondu-zoom-smaller;
+    }
+    h1 {
+        font-size: 0.8rem;
+    }
+    footer div, .proch--text {
+        font-size: 0.7rem;
+    }
+    footer {
+        height: 3vh;
+    }
+    
+}

@@ -1,19 +1,21 @@
 body
     { 
-        margin: 30px;
+        margin:0 30px 30px 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         
     }
+    
+   
     .bloc_page
     {
         
         display: flex;
         flex-direction: column;
         justify-content: center;        
-        padding: 10px 25px;
-        margin: 40px;        
+        padding:0 25px 10px 25px;
+        margin:0 40px 40px 40px;        
     }
     
     .section

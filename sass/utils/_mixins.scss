@@ -10,13 +10,22 @@
 }
 
 @mixin fondu-zoom-small {    
-     transform: scale(0.6);
+     transform: scale(0.7);
     opacity: 1;
     transition: all 1s cubic-bezier(.65,.13,.2,.81);
     &:hover{        
             transform: scale(1);       
             opacity: 0.3;
             }
+}
+@mixin fondu-zoom-smaller {    
+    transform: scale(0.6);
+   opacity: 1;
+   transition: all 1s cubic-bezier(.65,.13,.2,.81);
+   &:hover{        
+           transform: scale(0.9);       
+           opacity: 0.3;
+           }
 }
 @mixin gradient-text ($col-text) 
 {

@@ -28,6 +28,12 @@
     article div {
         font-size: 1.7rem;
     }
+    .page-menu, h2 {
+        font-size: 0.9rem;
+    }
+    article-note--titre{
+        padding-left: 15px;
+    }
 }
 @media screen and (max-width:300px) {
     article div {
@@ -42,5 +48,5 @@
     footer {
         height: 3vh;
     }
-    
+   
 }

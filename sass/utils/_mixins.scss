@@ -61,8 +61,7 @@
 	$value in $col-text {
 		&-#{$key} {
 			background-color: map-get($value, bg);
-			position: relative;
-			// z-index: 1;         
+			position: relative;			         
 			&::before {
 				position: absolute;
 				top: 0;

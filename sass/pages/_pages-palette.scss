@@ -19,6 +19,7 @@
 	padding: inherit;
 }
 
+//soulignement animé
 .palette_h3 {
 	display: inline;
 	text-align: center;
@@ -46,9 +47,9 @@
 	}
 }
 
+// Séparateurs catégories de plat
 .palette_ligne-droite {
-	height: 8px;
-	// width: 25vw;
+	height: 8px;	
 	background: linear-gradient(to left, $color-titre-start-palette, $color-titre-end-palette);
 	margin: 20px;
 	flex-grow: 1;
@@ -56,8 +57,7 @@
 }
 
 .palette_ligne-gauche {
-	height: 8px;
-	// width: 25vw;
+	height: 8px;	
 	background: linear-gradient(to right, $color-titre-start-palette, $color-titre-end-palette);
 	margin: 20px;
 	flex-grow: 1;

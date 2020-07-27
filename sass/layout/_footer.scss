@@ -1,22 +1,23 @@
-footer{
-    background-color: $bg-logo;
-    
-        position: fixed;        
-        bottom: 0;       
-        width: 80vw;
-        display: flex;
-        justify-content: space-between;
-        height: 20px;
-        padding: 20px 40px;
-        margin:40px auto 0 auto;        
-    }    
-    footer div{
 
-        &:hover{
-            animation: wiggle 150ms ease-in-out 8 alternate both;
-        }
-        a {
-            color: $text-logo;
-        }
-        
-    }
+
+footer {
+	background-color: $bg-logo;
+	position: fixed;
+	bottom: 0;
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+	padding: 20px 40px;
+	margin: 40px auto 0 auto;
+}
+
+footer div {
+	&:hover {
+		animation: wiggle 150ms ease-in-out 8 alternate both;
+	}
+	a {
+		color: $text-logo;
+	}
+}
+

@@ -1,27 +1,28 @@
-.article-note {
-    background-color: $bg-note;
 
-    
-    i {        
-        background-color:$bg-note ;
-        position: relative; ;
-       
-        &::after {
-            content: "";
-            position: absolute;
-            background: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
-            mix-blend-mode: lighten;
-            display: block;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;     
-        }
-    }
-    &--titre a{
-        color: black;
-    }
-    &--menu {
-        font-weight: bolder;
-    }
+
+.article-note {
+	background-color: $bg-note;
+	i {
+		background-color: $bg-note;
+		position: relative;
+		;
+		&::after {
+			content: "";
+			position: absolute;
+			background: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
+			mix-blend-mode: lighten;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+	&--titre a {
+		color: black;
+	}
+	&--menu {
+		font-weight: bolder;
+	}
 }
+

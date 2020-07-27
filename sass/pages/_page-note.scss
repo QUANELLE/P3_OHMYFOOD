@@ -1,78 +1,75 @@
-.page-menu_note
-{
-    background-color: $bg-note;  
-    i {        
-        background-color:$bg-note ;
-        position: relative; 
-       
-        &::after {
-            content: "";
-            position: absolute;
-            background: linear-gradient(90deg,rgba(255,0,0,0.73) 0%, rgba(213,146,34,0.8) 80%);
-            mix-blend-mode: lighten;
-            display: block;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;     
-        }
-    }     
+
+
+.page-menu_note {
+	background-color: $bg-note;
+	i {
+		background-color: $bg-note;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			background: linear-gradient(90deg, rgba(255, 0, 0, 0.73) 0%, rgba(213, 146, 34, 0.8) 80%);
+			mix-blend-mode: lighten;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
 }
 
-.article-note--text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.article-note--text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
 .article-note--text-bas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-    i {
-        margin-right: 8px;
-    }
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	i {
+		margin-right: 8px;
+	}
 }
+
 .page-note_plat {
-    font-weight: 100;
+	font-weight: 100;
+	.note_h3 {
+		display: inline;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+		transition: all 0.6s ease-in-out;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			width: 0px;
+			height: 3px;
+			margin: 0 0;
+			transition: all 0.6s ease-in-out;
+			opacity: 0;
+			background-color: black;
+			left: 0;
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+				opacity: 1;
+			}
+		}
+	}
+	.note_ligne-droite,
+	.note_ligne-gauche {
+		height: 8px;
+		flex-grow: 1;
+		background-color: black;
+		margin: 20px;
+		border-radius: 30%;
+	}
+}
 
-    
-    
-
-.note_h3 {
-    display: inline;
-    text-align: center;
-      margin: 0 auto;
-      padding: 0;
-      transition: all 0.6s ease-in-out;
-      position: relative;
-        &:before    
-        {
-            content:"" ;
-            position:absolute;
-            bottom:-1px;
-            width:0px;
-            height:3px;
-            margin:0 0;
-            transition:all 0.6s ease-in-out;            
-            opacity: 0;
-            background-color: black;        
-            left: 0;
-        }
-        &:hover {
-            &:before       
-        {
-          width: 100%;
-          opacity: 1;          
-        }
-}}
-
-
-.note_ligne-droite, .note_ligne-gauche {
-    height: 8px;
-	flex-grow: 1;
-	background-color: black;
-    margin: 20px;
-    border-radius: 30%;
-    }}

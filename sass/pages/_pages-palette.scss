@@ -1,66 +1,66 @@
-.page-menu_palette
-{
-    background-color: $bg-palette;  
-    
+
+
+.page-menu_palette {
+	background-color: $bg-palette;
 }
 
-.article-palette--text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.article-palette--text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .page-palette_plat {
-    font-weight: 100;}
+	font-weight: 100;
+}
 
 .article--text-palette {
-        padding: inherit;
-    }    
-    
+	padding: inherit;
+}
 
 .palette_h3 {
-    display: inline;
-    text-align: center;
-      margin: 0 auto;
-      padding: 0;
-      transition: all 0.6s ease-in-out;
-      position: relative;
-        &:before    
-        {
-            content:"" ;
-            position:absolute;
-            bottom:-1px;
-            width:0px;
-            height:3px;
-            margin:0 0;
-            transition:all 0.6s ease-in-out;            
-            opacity: 0;
-            background-color: $color-menu-palette;        
-            left: 0;
-        }
-        &:hover {
-            &:before       
-        {
-          width: 100%;
-          opacity: 1;          
-        }
-}}
-
+	display: inline;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	transition: all 0.6s ease-in-out;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 0px;
+		height: 3px;
+		margin: 0 0;
+		transition: all 0.6s ease-in-out;
+		opacity: 0;
+		background-color: $color-menu-palette;
+		left: 0;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
 
 .palette_ligne-droite {
-    height: 8px;
+	height: 8px;
 	// width: 25vw;
-	background:linear-gradient(to left, $color-titre-start-palette, $color-titre-end-palette);
-    margin: 20px;
-    flex-grow: 1;
-    border-radius: 50% 20% 20% 50%;
-    }
- .palette_ligne-gauche {
-        height: 8px;
-        // width: 25vw;
-        background:linear-gradient(to right, $color-titre-start-palette, $color-titre-end-palette);
-        margin: 20px;
-        flex-grow: 1;
-        border-radius: 20% 50% 50% 20%;
-        }    
+	background: linear-gradient(to left, $color-titre-start-palette, $color-titre-end-palette);
+	margin: 20px;
+	flex-grow: 1;
+	border-radius: 50% 20% 20% 50%;
+}
+
+.palette_ligne-gauche {
+	height: 8px;
+	// width: 25vw;
+	background: linear-gradient(to right, $color-titre-start-palette, $color-titre-end-palette);
+	margin: 20px;
+	flex-grow: 1;
+	border-radius: 20% 50% 50% 20%;
+}
+

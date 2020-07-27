@@ -459,7 +459,8 @@ table tr {
   width: 100%;
   opacity: 1;
 }
-.page-note_plat .note_ligne-droite, .page-note_plat .note_ligne-gauche {
+.page-note_plat .note_ligne-droite,
+.page-note_plat .note_ligne-gauche {
   height: 8px;
   flex-grow: 1;
   background-color: black;

@@ -1,10 +1,13 @@
-.article-palette{
-    background-color: $bg-palette;
-    &--titre {
-        padding: inherit;
-        margin: 0;
-    }
-    &--menu{
-        color: $color-menu-palette;
-    } 
+
+
+.article-palette {
+	background-color: $bg-palette;
+	&--titre {
+		padding: inherit;
+		margin: 0;
+	}
+	&--menu {
+		color: $color-menu-palette;
+	}
 }
+

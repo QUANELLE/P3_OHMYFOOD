@@ -1,135 +1,136 @@
+
+
 .page-menu_delice {
-    
-    background-color: $bg-delice;
+	background-color: $bg-delice;
 }
 
-
 .delice_plat_ligne-droite {
-    height: 8px;
-   flex-grow: 1;
-	background-color:$color-titre-middle-delice;
-    margin: 20px;
-    border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
-    }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-middle-delice;
+	margin: 20px;
+	border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
+}
+
 .delice_plat_ligne-gauche {
-      height: 8px;
-     flex-grow: 1;
-    background-color:$color-titre-middle-delice;
-      margin: 20px;
-      border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
-      }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-middle-delice;
+	margin: 20px;
+	border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
 .delice_dessert_ligne-droite {
-      height: 8px;     
-      flex-grow: 1;
-    background-color:$color-titre-end-delice;
-      margin: 20px;
-      border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
-     }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-end-delice;
+	margin: 20px;
+	border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
+}
+
 .delice_dessert_ligne-gauche {
-      height: 8px;     
-      flex-grow: 1;
-    background-color:$color-titre-end-delice;
-      margin: 20px;
-      border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
-     }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-end-delice;
+	margin: 20px;
+	border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
 .delice_entrée_ligne-gauche {
-        height: 8px;        
-        flex-grow: 1;
-        background-color:$color-titre-start-delice;
-        margin: 20px;
-        border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
-        }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-start-delice;
+	margin: 20px;
+	border-radius: 50% 20% 10% 80%/0% 10% 10% 80%;
+}
+
 .delice_entrée_ligne-droite {
-          height: 8px;        
-          flex-grow: 1;
-          background-color:$color-titre-start-delice;
-          margin: 20px;
-          border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
-          }
+	height: 8px;
+	flex-grow: 1;
+	background-color: $color-titre-start-delice;
+	margin: 20px;
+	border-radius: 10% 50% 80% 10%/20% 0% 80% 10%;
+}
 
 // soulignement animé
- 
-
 .delice_entrée_h3 {
-    display: inline;
-    text-align: center;
-      margin: 0 auto;
-      padding: 0;
-      transition: all 0.6s ease-in-out;
-      position: relative;
-        &:before    
-        {
-            content:"" ;
-            position:absolute;
-            bottom:-1px;
-            width:0px;
-            height:3px;
-            margin:0 0;
-            transition:all 0.6s ease-in-out;            
-            opacity: 0;
-            background-color:$color-titre-start-delice;        
-            left: 0;
-        }
-        &:hover {
-            &:before       
-        {
-          width: 100%;
-          opacity: 1;          
-        }
-}}
+	display: inline;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	transition: all 0.6s ease-in-out;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 0px;
+		height: 3px;
+		margin: 0 0;
+		transition: all 0.6s ease-in-out;
+		opacity: 0;
+		background-color: $color-titre-start-delice;
+		left: 0;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
 
 .delice_plat_h3 {
-            display: inline;
-            text-align: center;
-              margin: 0 auto;
-              padding: 0;
-              transition: all 0.6s ease-in-out;
-              position: relative;
-                &:before    
-                {
-                    content:"" ;
-                    position:absolute;
-                    bottom:-1px;
-                    width:0px;
-                    height:3px;
-                    margin:0 0;
-                    transition:all 0.6s ease-in-out;            
-                    opacity: 0;
-                    background-color:$color-titre-middle-delice;        
-                    left: 0;
-                }
-                &:hover {
-                    &:before       
-                {
-                  width: 100%;
-                  opacity: 1;          
-                }
-        }}
-       
+	display: inline;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	transition: all 0.6s ease-in-out;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 0px;
+		height: 3px;
+		margin: 0 0;
+		transition: all 0.6s ease-in-out;
+		opacity: 0;
+		background-color: $color-titre-middle-delice;
+		left: 0;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
+
 .delice_dessert_h3 {
-            display: inline;
-            text-align: center;
-              margin: 0 auto;
-              padding: 0;
-              transition: all 0.6s ease-in-out;
-              position: relative;
-                &:before    
-                {
-                    content:"" ;
-                    position:absolute;
-                    bottom:-1px;
-                    width:0px;
-                    height:3px;
-                    margin:0 0;
-                    transition:all 0.6s ease-in-out;            
-                    opacity: 0;
-                    background-color:$color-titre-end-delice;        
-                    left: 0;
-                }
-                &:hover {
-                    &:before       
-                {
-                  width: 100%;
-                  opacity: 1;          
-                }
-        }}      
+	display: inline;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	transition: all 0.6s ease-in-out;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 0px;
+		height: 3px;
+		margin: 0 0;
+		transition: all 0.6s ease-in-out;
+		opacity: 0;
+		background-color: $color-titre-end-delice;
+		left: 0;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
+

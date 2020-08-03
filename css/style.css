@@ -810,6 +810,10 @@ table tr {
   }
 }
 @media screen and (max-width: 879px) {
+  .proch--text {
+    min-width: 150px;
+  }
+
   .article {
     width: 60vw;
   }
@@ -844,10 +848,6 @@ table tr {
 
   article-note--titre {
     padding-left: 15px;
-  }
-
-  .proch--text {
-    min-width: 150px;
   }
 }
 @media screen and (max-width: 300px) {

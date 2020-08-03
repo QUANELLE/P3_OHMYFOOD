@@ -5,7 +5,9 @@
     }    
 }
 @media screen and (max-width: 879px) {
-    
+    .proch--text {
+        min-width: 150px;
+    }
     .article {
         width: $media-width;       
     }
@@ -32,10 +34,7 @@
     }
     article-note--titre{
         padding-left: 15px;
-    }
-    .proch--text {
-        min-width: 150px;
-    }
+    }    
 }
 @media screen and (max-width:300px) {
     article div {

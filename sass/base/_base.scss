@@ -6,14 +6,15 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .bloc_page {
 	box-sizing: border-box;	
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	padding: 0 25px 10px 25px;
+	justify-content: center;	
 	margin: 0;
 }
 

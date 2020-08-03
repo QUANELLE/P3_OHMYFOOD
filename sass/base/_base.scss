@@ -10,7 +10,7 @@ body {
 
 .bloc_page {
 	box-sizing: border-box;
-	max-width: 1400px;
+	// max-width: 1200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,10 +19,12 @@ body {
 }
 
 .section {
+	max-width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: space-around;	
+	align-content: space-around;
+	margin: auto;	
 }
 
 .article {
@@ -34,7 +36,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: $width;
-	height: $height;
+	max-width: 400px;
+	// height: $height;
+	// min-height: 200px;
+	max-height: 55vh;
 	margin: 30px;
 	padding: 30px;
 	@include gradient-text ($col-text);

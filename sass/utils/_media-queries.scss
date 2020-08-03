@@ -34,6 +34,9 @@
     article-note--titre{
         padding-left: 15px;
     }
+    .proch--text {
+        min-width: 150px;
+    }
 }
 @media screen and (max-width:300px) {
     article div {
@@ -44,6 +47,9 @@
     }
     footer div, .proch--text {
         font-size: 0.7rem;
+    }
+    .proch--text {
+        min-width: 100px;
     }
     footer {
         height: 3vh;

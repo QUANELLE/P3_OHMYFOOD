@@ -1,11 +1,11 @@
 
 
 @mixin fondu-zoom {
-	transform: scale(1);
+	transform: scale(0.9);
 	opacity: 1;
 	transition: all 1s cubic-bezier(.65, .13, .2, .81);
 	&:hover {
-		transform: scale(1.5);
+		transform: scale(1.2);
 		opacity: 0.3;
 	}
 }

@@ -31,7 +31,6 @@ body {
 
 .bloc_page {
   box-sizing: border-box;
-  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,10 +39,12 @@ body {
 }
 
 .section {
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  margin: auto;
 }
 
 .article {
@@ -55,7 +56,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 30vw;
-  height: 45vw;
+  max-width: 400px;
+  max-height: 55vh;
   margin: 30px;
   padding: 30px;
 }
@@ -126,12 +128,12 @@ article div {
   align-items: center;
   margin: 0;
   padding: 50px 20px;
-  transform: scale(1);
+  transform: scale(0.9);
   opacity: 1;
   transition: all 1s cubic-bezier(0.65, 0.13, 0.2, 0.81);
 }
 article div:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   opacity: 0.3;
 }
 
@@ -247,6 +249,9 @@ article div {
 .article-note--menu {
   font-weight: bolder;
 }
+.article-note--text p {
+  margin-bottom: 0;
+}
 
 .article-palette {
   background-color: #fdfffd;
@@ -309,7 +314,6 @@ header {
   text-align: center;
   width: 100vw;
   margin: 0;
-  padding: 5px 40px;
 }
 
 .page-menu {
@@ -807,7 +811,7 @@ table tr {
 @media screen and (max-width: 879px) {
   .article {
     width: 60vw;
-    height: 90vw;
+    height: 72vw;
   }
 
   footer div, .proch--text {
@@ -841,6 +845,10 @@ table tr {
   article-note--titre {
     padding-left: 15px;
   }
+
+  .proch--text {
+    min-width: 150px;
+  }
 }
 @media screen and (max-width: 300px) {
   article div {
@@ -859,6 +867,10 @@ table tr {
 
   footer div, .proch--text {
     font-size: 0.7rem;
+  }
+
+  .proch--text {
+    min-width: 100px;
   }
 
   footer {

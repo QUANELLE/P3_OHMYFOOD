@@ -22,18 +22,21 @@
   }
 }
 body {
-  margin: 0 30px 30px 30px;
+  box-sizing: border-box;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bloc_page {
+  box-sizing: border-box;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 25px 10px 25px;
-  margin: 0 40px 40px 40px;
+  margin: 0;
 }
 
 .section {
@@ -280,15 +283,16 @@ article div {
 }
 
 footer {
+  box-sizing: border-box;
   background-color: #00806f;
   position: fixed;
   bottom: 0;
-  width: 80vw;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   height: 20px;
-  padding: 20px 40px;
-  margin: 40px auto 0 auto;
+  padding: 20px 40px 40px 40px;
+  margin: 40px 0 0 0;
 }
 
 footer div:hover {
@@ -299,11 +303,12 @@ footer div a {
 }
 
 header {
+  box-sizing: border-box;
   background-color: #00806f;
   color: #f8c10a;
   text-align: center;
-  width: 80vw;
-  margin: auto;
+  width: 100vw;
+  margin: 0;
   padding: 5px 40px;
 }
 
